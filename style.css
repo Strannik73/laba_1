@@ -84,7 +84,7 @@ a {
   line-height: normal;
 }
 
-.template .home-recipes-article {
+.template .home-recipes-article a {
   position: absolute;
   top: 36px;
   left: 777px;
@@ -94,6 +94,7 @@ a {
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
+  
 }
 
 .template .search {
@@ -1239,6 +1240,7 @@ a {
   font-size: 20px;
   letter-spacing: 0;
   line-height: 28px;
+
 }
 
 .template .rickie-baroch-june-9 {
@@ -1252,6 +1254,7 @@ a {
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
+  margin: 40px;
 }
 
 .template .overlap-30 {
@@ -1834,7 +1837,7 @@ a {
   background-color: #000000;
 }
 
-.template .home-recipes-article-2 {
+.template .home-recipes-article-2 a {
   position: absolute;
   top: 539px;
   left: 1186px;
@@ -1844,6 +1847,18 @@ a {
   font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
+}
+.home-recipes-article {
+  display: flex;
+  gap: 30px; /* расстояние между ссылками */
+  justify-content: center; /* выравнивание по центру */
+  flex-wrap: wrap; /* чтобы переносились при нехватке места */
+}
+
+.home-recipes-article a {
+  text-decoration: none;
+  color: #333; /* или ваш цвет */
+  font-weight: bold;
 }
 
 .template .recent-post {
