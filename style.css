@@ -84,17 +84,31 @@ a {
   line-height: normal;
 }
 
-.template .home-recipes-article a {
+.template .home-recipes-article {
   position: absolute;
   top: 36px;
   left: 777px;
-  font-family: "PT Sans", Helvetica;
+  font-family: "PT Sans", Helvetica, sans-serif;
   font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
+  color: #ffffff;
   letter-spacing: 0;
   line-height: normal;
-  
+  white-space: nowrap;
+}
+
+.template .home-recipes-article a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 32px; 
+}
+
+.template .home-recipes-article a:last-child {
+  margin-right: 0; 
+}
+
+.template .home-recipes-article a:hover {
+  text-decoration: underline;
 }
 
 .template .search {
@@ -1837,28 +1851,25 @@ a {
   background-color: #000000;
 }
 
-.template .home-recipes-article-2 a {
+.template .home-recipes-article-2 {
   position: absolute;
   top: 539px;
   left: 1186px;
-  font-family: "PT Sans", Helvetica;
+  font-family: "PT Sans", Helvetica, sans-serif;
   font-weight: 400;
-  color: #ffffff;
   font-size: 14px;
+  color: #ffffff;
   letter-spacing: 0;
   line-height: normal;
 }
-.home-recipes-article {
-  display: flex;
-  gap: 30px; /* расстояние между ссылками */
-  justify-content: center; /* выравнивание по центру */
-  flex-wrap: wrap; /* чтобы переносились при нехватке места */
+
+.template .home-recipes-article-2 a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.home-recipes-article a {
-  text-decoration: none;
-  color: #333; /* или ваш цвет */
-  font-weight: bold;
+.template .home-recipes-article-2 a:hover {
+  text-decoration: underline;
 }
 
 .template .recent-post {
@@ -1902,6 +1913,7 @@ a {
   font-style: italic;
   font-size: 14px;
   letter-spacing: 0;
+  margin: 30px;
 }
 
 .template .bitmap-copy-3 {
